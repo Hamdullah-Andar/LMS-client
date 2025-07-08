@@ -1,5 +1,7 @@
-import react_Logo from './react.svg'
+import web_Logo from './logo.svg'
+import user_icon from './user.svg'
 
 export const assets = {
-    react_Logo
+    web_Logo,
+    user_icon
 }

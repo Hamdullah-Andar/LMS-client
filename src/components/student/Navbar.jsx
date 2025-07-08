@@ -12,12 +12,12 @@ const Navbar = () => {
       }`}
     >
       <img
-        src={assets.react_Logo}
+        src={assets.web_Logo} 
         alt="Logo"
         className="w-8 lg:w-10 cursor-pointer"
       />
       <div className="hidden md:flex items-center gap-5 text-gray-500">
-        <div>
+        <div className="flex items-center gap-5">
           <button>Become Educator</button>|{" "}
           <Link to="/my-enrollments">My Enrollments</Link>
         </div>
@@ -25,7 +25,14 @@ const Navbar = () => {
           Create Account
         </button>
       </div>
-      <div></div>
+      {/* Small Screen NavBar */}
+      <div className="md:hidden flex items-center gap-2 sm:gap-5 text-gray-500">
+        <div>
+          <button>Become Educator</button>|{" "}
+          <Link to="/my-enrollments">My Enrollments</Link>
+        </div>
+        <button><img className="w-7" src={assets.user_icon} alt="" /></button>
+      </div>
     </div>
   );
 };
