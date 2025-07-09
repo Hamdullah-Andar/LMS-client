@@ -5,3 +5,17 @@
   font-family: "Outfit";
 }
 
+/* Design Tokens */
+@theme {
+  --text-home-heading-large: 3.5rem;   /* 56px */
+  --text-home-heading-small: 2.25rem;  /* 36px */
+}
+
+/* Custom Utilities */
+.text-home-heading-large {
+  font-size: var(--text-home-heading-large);
+}
+
+.text-home-heading-small {
+  font-size: var(--text-home-heading-small);
+}
